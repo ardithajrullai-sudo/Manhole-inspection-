@@ -7,29 +7,29 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <title>Manhole Inspector</title>
+  <title>Manhole Inspector • Geos‑IT</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="lib/jszip.min.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
 <header class="app-header">
-  <h1>Manhole Inspector</h1>
+  <img src="brand/logo.png" alt="Geos‑IT" class="brand-logo">
+  <div class="header-text">
+    <h1>Manhole Inspector</h1>
+    <div class="subtitle">PAS‑128 field capture • Offline • iPhone PWA</div>
+  </div>
   <nav>
-    <button id="newBtn" class="primary">New Inspection</button>
-    <button id="listBtn">My Inspections</button>
+    <button id="newBtn" class="primary">New</button>
+    <button id="listBtn">List</button>
+    <button id="exportAllBtn">Export All</button>
     <button id="installBtn" hidden>Install</button>
   </nav>
 </header>
-
 <main id="view"></main>
-
 <footer class="app-footer">
-  <small>&copy; 2025 Manhole Inspector • Works offline • Add to Home Screen to use like an app</small>
+  <small>&copy; 2025 Geos‑IT Ltd • Manhole Inspector</small>
 </footer>
-
-<script>
-  // Simple router to default to list view
-  window.addEventListener('DOMContentLoaded', () => { window.App && window.App.showList(); });
-</script>
+<script>window.addEventListener('DOMContentLoaded',()=>{ window.App && window.App.showList(); });</script>
 </body>
 </html>
